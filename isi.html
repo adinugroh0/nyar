@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secret Gallery</title>
+    <link rel="icon" href="ikon.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+      svg {
+        top: 0;
+        position: absolute;
+        filter: blur(10px);
+      }
+      /* Gaya utama untuk sidebar */
+      .sidebar {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 250px;
+        position: relative;
+        background-color: #333;
+        padding-top: 20px;
+        border-radius: 20px;
+      }
+      /* Gaya tautan dalam sidebar */
+      .sidebar a {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        display: block;
+      }
+      /* Efek hover pada tautan */
+      .sidebar a:hover {
+        background-color: #555;
+      }
+      /* Gaya konten */
+      .content {
+        margin-left: 250px; /* Lebar sidebar */
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#000b76"
+        fill-opacity="1"
+        d="M0,64L40,58.7C80,53,160,43,240,37.3C320,32,400,32,480,74.7C560,117,640,203,720,213.3C800,224,880,160,960,154.7C1040,149,1120,203,1200,218.7C1280,235,1360,213,1400,202.7L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <div class="sidebar">
+      <a href="#">Menu 1</a>
+      <a href="#">Menu 2</a>
+      <a href="#">Menu 3</a>
+      <a href="#">Menu 4</a>
+    </div>
+    <div class="content">
+      <!-- Isi konten di sini -->
+    </div>
+  </body>
+</html>
